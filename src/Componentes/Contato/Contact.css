@@ -1,0 +1,49 @@
+.contact {
+    padding: 40px 20px;
+    background-color: #282c34;
+    text-align: center;
+    color: aqua;
+
+  }
+  
+  .contact-form {
+    max-width: 600px; /* Limita a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    height: 100px; /* Altura padrão do textarea */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Efeito ao passar o mouse */
+  }
+  

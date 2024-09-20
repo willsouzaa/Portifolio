@@ -1,0 +1,22 @@
+.skills {
+  padding: 40px 20px; /* Espaçamento interno */
+  background-color: #282c34; /* Cor de fundo desejada */
+  text-align: center; /* Centraliza o texto */
+}
+
+.skills h1 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  color: aqua;
+}
+
+.skills ul {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove padding padrão */
+  margin: 0; /* Remove margin padrão */
+}
+
+.skills li {
+  margin: 10px 0; /* Espaço entre os itens da lista */
+  font-size: 18px; /* Tamanho da fonte */
+  color:aqua; /* Cor do texto */
+}

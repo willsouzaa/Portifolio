@@ -1,0 +1,43 @@
+.about-me {
+    padding: 40px 20px;
+    background-color: #282c34;
+    text-align: center;
+    color: aqua;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+    color: aqua;
+  }
+  
+  .profile-image {
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-left: 20px; /* Espaço entre a descrição e a imagem */
+  }
+  
+  .description {
+    max-width: 600px; /* Limita a largura do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0; /* Espaçamento entre itens da lista */
+  }
+  
