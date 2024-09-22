@@ -4,10 +4,12 @@ import Perfil from "./îmagem-perfil.png"
 function AboutMe() {
   return (
     <section id="sobre-mim" className="about-me">
-      <h2>Sobre Mim</h2>
+      
       <div className="about-content">
         <div className="description">
-          <p>Olá! Sou um desenvolvedor apaixonado por criar soluções inovadoras. Tenho experiência em tecnologias como React, Node.js, e Java. Estou sempre buscando aprender e melhorar minhas habilidades.</p>
+          <h1>Olá! Bem-vindo(a) ao meu portfólio!</h1>
+          <p>Meu nome é Paulo, sou desenvolvedor full stack com experiência em React, Node.js, JavaScript, SQL e MySQL. Aqui, você encontrará uma seleção dos meus principais projetos, desde soluções web até sistemas mais complexos, desenvolvidos ao longo da minha jornada acadêmica e como freelancer.
+          Sinta-se à vontade para explorar meus trabalhos e entrar em contato. Será um prazer compartilhar mais sobre minhas habilidades e discutir futuras colaborações!</p>
         </div>
         <img src={Perfil} alt="Foto do Usuário" className="profile-image" />
       </div>

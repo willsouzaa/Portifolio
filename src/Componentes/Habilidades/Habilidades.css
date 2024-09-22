@@ -1,22 +1,76 @@
-.skills {
-  padding: 40px 20px; /* Espaçamento interno */
-  background-color: #282c34; /* Cor de fundo desejada */
-  text-align: center; /* Centraliza o texto */
+/* Estilizando a seção de habilidades */
+.services {
+  padding: 50px 20px;
+  background-color: #282c34;
+  text-align: center;
 }
 
-.skills h1 {
-  margin-bottom: 20px; /* Espaço abaixo do título */
-  color: aqua;
+.heading {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffffff;
 }
 
-.skills ul {
-  list-style-type: none; /* Remove marcadores da lista */
-  padding: 0; /* Remove padding padrão */
-  margin: 0; /* Remove margin padrão */
+.heading strong {
+  color: #6ec0d4; /* Destaque de cor para React */
 }
 
-.skills li {
-  margin: 10px 0; /* Espaço entre os itens da lista */
-  font-size: 18px; /* Tamanho da fonte */
-  color:aqua; /* Cor do texto */
+/* Container para as habilidades */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o layout conforme o tamanho da tela */
+  gap: 20px;
+  justify-items: center;
+}
+
+.services-container div {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  color: white; /* Cor do texto padrão */
+}
+
+/* Estilos específicos para cada habilidade */
+.services-container .html {
+  background-color: #e44d26; /* Cor do logo HTML */
+}
+
+.services-container .css {
+  background-color: #007acc; /* Cor do logo CSS */
+}
+
+.services-container .javascript {
+  background-color: #f7df1e; /* Cor do logo JavaScript */
+  color: #000; /* Texto preto para melhor contraste */
+}
+
+.services-container .react {
+  background-color: #61dbfb; /* Cor do logo React */
+}
+
+.services-container .git {
+  background-color: #f05032; /* Cor do logo Git */
+}
+
+/* Efeito ao passar o mouse nas habilidades */
+.services-container div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .services-container div h3 {
+    font-size: 18px;
+  }
 }

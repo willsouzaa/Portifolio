@@ -3,15 +3,16 @@ import './Habilidades.css'; // Importando o CSS para Habilidades
 
 function Skills() {
   return (
-    <section id="habilidades" className="skills">
-      <h1>Habilidades</h1>
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>SQL</li>
-        <li>HTML & CSS</li>
-      </ul>
+    <section class="services" id="habilidades">
+        <h2 class="heading"> Minhas <strong>Habilidades</strong></h2>
+
+        <div className="services-container">
+    <div className="html"><h3>HTML</h3></div>
+    <div className="css"><h3>CSS</h3></div>
+    <div className="javascript"><h3>JavaScript</h3></div>
+    <div className="react"><h3>React</h3></div>
+    <div className="git"><h3>Git</h3></div>
+  </div>
     </section>
   );
 }

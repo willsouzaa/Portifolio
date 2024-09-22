@@ -9,3 +9,11 @@ body {
 *::after {
   box-sizing: inherit; /* Aplica box-sizing a todos os elementos */
 }
+
+/*@media (max-width: 600px) {
+  body {
+    background-color: lightgray;
+    font-size: 14px;
+}
+}
+*/

@@ -2,7 +2,7 @@
     padding: 40px 20px;
     background-color: #282c34;
     text-align: center;
-    color: aqua;
+    color: #6ec0d4;
   }
   
   .about-content {
@@ -10,18 +10,26 @@
     align-items: center; /* Alinha verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     margin-top: 20px;
-    color: aqua;
+    color: #6ec0d4;
   }
   
-  .profile-image {
-    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
-    border-radius: 50%; /* Torna a imagem redonda */
-    margin-left: 20px; /* Espaço entre a descrição e a imagem */
-  }
+  /* Ajustes para telas menores */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Muda a direção do flexbox para coluna */
+      align-items: center; /* Centraliza os itens */
+    }
   
-  .description {
-    max-width: 600px; /* Limita a largura do texto */
-    text-align: left; /* Alinha o texto à esquerda */
+    .profile-image {
+      width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+      margin: 0 0 20px 0; /* Espaço entre a imagem e o texto */
+    }
+  
+    .description {
+      max-width: 90%; /* Limita a largura do texto */
+      text-align: center; /* Centraliza o texto */
+      font-size: 20px; /* Ajusta o tamanho da fonte */
+    }
   }
   
   h2 {

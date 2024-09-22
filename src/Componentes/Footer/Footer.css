@@ -1,7 +1,7 @@
 .footer {
     padding: 20px;
     background-color: #282c34;
-    color:aqua;
+    color:#6ec0d4;
     text-align: center;
   }
   
@@ -15,7 +15,7 @@
   }
   
   .social-links a {
-    color:aqua;
+    color:#6ec0d4;
     text-decoration: none;
     margin: 0 10px; /* Espaçamento entre os links */
   }

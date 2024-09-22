@@ -5,11 +5,10 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} Seu Nome. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Paulo amancio. Todos os direitos reservados.</p>
         <div className="social-links">
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://twitter.com/seu-usuario" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://github.com/willsouzaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/paulo-amancio/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </footer>
