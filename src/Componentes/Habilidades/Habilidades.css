@@ -54,6 +54,8 @@
   background-color: #f05032; /* Cor do logo Git */
 }
 
+
+
 /* Efeito ao passar o mouse nas habilidades */
 .services-container div:hover {
   transform: translateY(-10px);

@@ -11,6 +11,8 @@
     justify-content: center; /* Centraliza horizontalmente */
     margin-top: 20px;
     color: #6ec0d4;
+    font-family: 'Roboto', sans-serif;
+
   }
   
   /* Ajustes para telas menores */
@@ -31,13 +33,19 @@
       font-size: 20px; /* Ajusta o tamanho da fonte */
     }
   }
+
   
   h2 {
     margin-bottom: 20px;
+    
+
+
   }
   
   h3 {
     margin-top: 20px;
+   
+
   }
   
   ul {
