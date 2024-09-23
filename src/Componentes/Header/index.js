@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import logo from "./logo.png";
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Importar o ícone do WhatsApp
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,8 +27,10 @@ function Header() {
   return (
     <header className="header">
       <div className="contact">
-        <p>48 98840-5365</p>
-        <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com/send?phone=48988405365" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp color="#6ec0d4" size={24} /> {/* Ícone do WhatsApp */}
+        </a>
+        <a href="https://www.linkedin.com/in/paulo-amancio/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin color="#6ec0d4" size={24} />
         </a>
       </div>

@@ -22,9 +22,8 @@
   margin-top: 2rem;
 }
 
-
 .logo img {
-  height: 100px;
+  height: 100px; /* Tamanho padrão da logo */
 }
 
 .menu-anchor {
@@ -82,6 +81,28 @@
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .contact p {
+    font-size: 10px;
+  }
+
+  .contact a svg {
+    width: 20px;
+    height: 20px; 
+}
+.contact {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.contact a {
+  margin-right: 10px;
+}
 }
