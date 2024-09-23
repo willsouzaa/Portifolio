@@ -31,7 +31,7 @@
   cursor: pointer;
   color: white;
 
-
+}
 .services-container .html {
   background-color: #e44d26;
 }
@@ -72,4 +72,6 @@
   .services-container div h3 {
     font-size: 18px;
   }
+}
+}
 }
