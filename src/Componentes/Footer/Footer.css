@@ -6,8 +6,8 @@
   }
   
   .footer-content {
-    max-width: 800px; /* Limita a largura do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .social-links {
@@ -17,10 +17,8 @@
   .social-links a {
     color:#6ec0d4;
     text-decoration: none;
-    margin: 0 10px; /* Espaçamento entre os links */
-  }
+    margin: 0 10px;
   
   .social-links a:hover {
-    text-decoration: underline; /* Efeito ao passar o mouse */
-  }
+    text-decoration: underline;
   

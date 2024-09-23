@@ -29,40 +29,37 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  color: white; /* Cor do texto padrão */
-}
+  color: white;
 
-/* Estilos específicos para cada habilidade */
+
 .services-container .html {
-  background-color: #e44d26; /* Cor do logo HTML */
+  background-color: #e44d26;
 }
 
 .services-container .css {
-  background-color: #007acc; /* Cor do logo CSS */
+  background-color: #007acc;
 }
 
 .services-container .javascript {
-  background-color: #f7df1e; /* Cor do logo JavaScript */
-  color: #000; /* Texto preto para melhor contraste */
+  background-color: #f7df1e;
+  color: #000;
 }
 
 .services-container .react {
-  background-color: #61dbfb; /* Cor do logo React */
-}
+  background-color: #61dbfb;
 
 .services-container .git {
-  background-color: #f05032; /* Cor do logo Git */
-}
+  background-color: #f05032;
 
 
 
-/* Efeito ao passar o mouse nas habilidades */
+
 .services-container div:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .services-container {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

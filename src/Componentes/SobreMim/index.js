@@ -1,5 +1,5 @@
 import React from 'react';
-import './SobreMim.css'; // Importando o CSS para o Sobre Mim
+import './SobreMim.css';
 import Perfil from "./îmagem-perfil.png"
 function AboutMe() {
   return (

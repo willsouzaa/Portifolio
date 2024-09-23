@@ -1,5 +1,5 @@
 import React from 'react';
-import './Habilidades.css'; // Importando o CSS para Habilidades
+import './Habilidades.css';
 
 function Skills() {
   return (
