@@ -15,7 +15,7 @@ function Projetos() {
             <p>Este projeto é uma aplicação web construída com React para gerenciar colaboradores de uma empresa, categorizando-os em diferentes times. A aplicação oferece um formulário dinâmico para adicionar novos colaboradores e organiza visualmente as equipes com cores personalizadas.</p>
           </div>
           <div className="button-wrapper">
-            <a href="https://organo-cadastro-de-funcionarios-react-e-javascript.vercel.app/" className="btn outline" target="_blank" rel="noreferrer">Deploy</a>
+            <a href="https://organo-cadastro-de-funcionarios-react-e-javascript.vercel.app/" className="btn outline" target="_blank" rel="noreferrer">Visitar</a>
             <a href="https://github.com/willsouzaa/Organo-cadastro-de-funcionarios-react-e-javascript" className="btn fill" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
@@ -27,7 +27,7 @@ function Projetos() {
             <p>Um aplicativo web construído com React que permite aos usuários gerenciar listas personalizadas de filmes favoritos. Utilizando o Create React App e React Router, o projeto proporciona uma navegação fluida entre páginas de listagem, detalhes e criação de listas. Com hooks como useState e useEffect, a aplicação gerencia estados e interações com a API, enquanto a interface responsiva é composta por componentes reutilizáveis, oferecendo uma experiência agradável ao usuário.</p>
           </div>
           <div className="button-wrapper">
-            <a href="" className="btn outline" target="_blank" rel="noreferrer">Deploy</a>
+            <a href="" className="btn outline" target="_blank" rel="noreferrer">Visitar</a>
             <a href="https://github.com/willsouzaa/Cinetag-Router.git" className="btn fill" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
