@@ -23,7 +23,7 @@
 }
 
 .logo img {
-  height: 100px; /* Tamanho padrão da logo */
+  height: 100px;
 }
 
 .menu-anchor {
@@ -55,6 +55,7 @@
   background: #282c34;
   transition: right 0.25s ease;
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 .nav ul {
@@ -63,6 +64,7 @@
 }
 
 .nav a {
+  cursor: pointer;
   display: block;
   padding: 10px;
   color: #fff;

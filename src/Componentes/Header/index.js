@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import logo from "./logo.png";
-import { FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Importar o ícone do WhatsApp
+import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { Link as ScrollLink } from 'react-scroll'; // Importando Link do react-scroll
+import { Link } from 'react-router-dom'; // Usando react-router-dom para rotas
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +30,7 @@ function Header() {
     <header className="header">
       <div className="contact">
         <a href="https://api.whatsapp.com/send?phone=48988405365" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp color="#6ec0d4" size={24} /> {/* Ícone do WhatsApp */}
+          <FaWhatsapp color="#6ec0d4" size={24} />
         </a>
         <a href="https://www.linkedin.com/in/paulo-amancio/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin color="#6ec0d4" size={24} />
@@ -44,11 +46,11 @@ function Header() {
       </span>
       <nav ref={menuRef} className={`nav ${menuOpen ? 'menu-active' : ''}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#Ferramentas">Ferramentas</a></li>
+          <li><ScrollLink to="header" smooth={true} duration={500}>Home</ScrollLink></li> {/* Usando react-scroll para scroll suave */}
+          <li><ScrollLink to="projetos" smooth={true} duration={500}>Projetos</ScrollLink></li>
+          <li><ScrollLink to="habilidades" smooth={true} duration={500}>Habilidades</ScrollLink></li>
+          <li><ScrollLink to="contact" smooth={true} duration={500}>Contato</ScrollLink></li>
+          <li><Link to="/favoritos">Ferramentas</Link></li> {/* Usando react-router-dom para navegação entre páginas */}
         </ul>
       </nav>
     </header>

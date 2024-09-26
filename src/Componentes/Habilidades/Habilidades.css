@@ -1,4 +1,4 @@
-/* Estilizando a seção de habilidades */
+
 .services {
   padding: 50px 20px;
   background-color: #282c34;
@@ -12,10 +12,10 @@
 }
 
 .heading strong {
-  color: #6ec0d4; /* Destaque de cor para React */
+  color: #6ec0d4;
 }
 
-/* Container para as habilidades */
+
 .services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o layout conforme o tamanho da tela */
