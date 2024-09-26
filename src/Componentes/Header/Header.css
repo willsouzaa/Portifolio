@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 20px; /* Aumente o padding se necessário */
   background-color: #282c34;
   color: #6ec0d4;
   position: relative; 
+  z-index: 1000; /* Mantenha o z-index alto para que o header fique acima */
 }
 
 .contact {
@@ -47,7 +48,7 @@
 }
 
 .nav {
-  position: fixed;
+  position: fixed; /* A posição fixa pode causar sobreposição */
   top: 0;
   right: -220px;
   width: 220px;
@@ -55,7 +56,7 @@
   background: #282c34;
   transition: right 0.25s ease;
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 999; /* Certifique-se de que o menu esteja acima de outros elementos */
 }
 
 .nav ul {
