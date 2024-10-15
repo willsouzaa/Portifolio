@@ -9,20 +9,18 @@ function AboutMe() {
       <div className="about-content">
         <div className="description">
           {/* Adicionando a animação de digitação no título */}
-          <h1>
+          <h1 className='stringName'>
             <ReactTyped
               strings={[
-                'Olá! Bem-vindo(a) ao meu portfólio!',
-                'Explore meus projetos!',
+                'Olá! Bem-vindo(a) ao meu portfólio!'
               ]}
               typeSpeed={100} // Velocidade de digitação
               backSpeed={30} // Velocidade para apagar
-              loop // Faz o loop contínuo das frases
             />
           </h1>
 
-          <p>
-            Meu nome é Paulo, sou desenvolvedor full stack com experiência em React, Node.js, JavaScript, SQL e MySQL. Aqui, você encontrará uma seleção dos meus principais projetos, desde soluções web até sistemas mais complexos, desenvolvidos ao longo da minha jornada acadêmica e como freelancer. Sinta-se à vontade para explorar meus trabalhos e entrar em contato. Será um prazer compartilhar mais sobre minhas habilidades e discutir futuras colaborações!
+          <p className='stringDescriçao'>
+            Meu nome é <strong>Paulo</strong>, sou desenvolvedor full stack com experiência em React, Node.js, JavaScript, SQL e MySQL. Aqui, você encontrará uma seleção dos meus principais projetos, desde soluções web até sistemas mais complexos, desenvolvidos ao longo da minha jornada acadêmica e como freelancer. Sinta-se à vontade para explorar meus trabalhos e entrar em contato. Será um prazer compartilhar mais sobre minhas habilidades e discutir futuras colaborações!
           </p>
         </div>
         <img src={Perfil} alt="Foto do Usuário" className="profile-image" />
