@@ -13,43 +13,75 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  padding: 20px;
 }
 
 .projeto {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.25);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  padding: 38px;
-  text-align: center;
-  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  perspective: 1000px;
 }
 
-.wrapper {
+.flip-card {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.flip-card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
 }
 
-.banner-image {
-  height: 300px;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  height: 100%;
+  backface-visibility: hidden;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.255);
+  overflow: hidden;
+}
+
+.flip-card-front {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: 'Righteous', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.flip-card-back {
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 12px;
 }
 
 h3 {
+  background-color: rgba(133, 133, 133, 0.7); /* Fundo semi-transparente em cinza */
   font-family: 'Righteous', sans-serif;
-  color: rgba(255, 255, 255, 0.98);
-  text-transform: uppercase;
   font-size: 1.8rem;
   margin-top: 20px;
+  color: rgba(255, 255, 255, 0.98);
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
 }
 
 p {
@@ -57,21 +89,25 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   line-height: 150%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .button-wrapper {
   margin-top: 18px;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .btn {
   border: none;
   padding: 12px 24px;
   border-radius: 24px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   cursor: pointer;
   transition: all .3s ease;
@@ -97,4 +133,24 @@ p {
 .fill:hover {
   transform: scale(1.125);
   filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #projetos h2 {
+    font-size: 28px;
+  }
+
+  .flip-card {
+    height: 350px;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+  }
 }

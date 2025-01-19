@@ -1,110 +1,136 @@
-import React from 'react'; // Importa a biblioteca React
-import './Habilidades.css'; // Importa o arquivo de estilos CSS para a seção de habilidades
-import { motion } from 'framer-motion'; // Importa o Framer Motion para animações
-import { useInView } from 'react-intersection-observer'; // Importa o Intersection Observer para detectar visibilidade
+import React from 'react';
+import './Habilidades.css';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Skills() {
-  // Variantes de animação para cada caixa de habilidade
   const boxVariant = {
-    hidden: { opacity: 0, y: 50 }, // Estado inicial (invisível)
-    visible: { opacity: 1, y: 0 }, // Estado final (visível)
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
   };
 
-  // Hook para monitorar se cada caixa de habilidade está na área visível da página
   const [refHtml, inViewHtml] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [refCss, inViewCss] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [refJs, inViewJs] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [refReact, inViewReact] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [refGit, inViewGit] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [refSql, inViewSql] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [refMongo, inViewMongo] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [refJava, inViewJava] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section className="services" id="habilidades"> {/* Seção de habilidades */}
+    <section className="skills-section" id="habilidades">
       <h2 className="heading">
-        Minhas <strong>Habilidades</strong> {/* Cabeçalho da seção */}
+        Minhas <strong>Habilidades</strong>
       </h2>
 
-      <div className="services-container"> {/* Container para as caixas de habilidades */}
+      <div className="skills-container">
         {/* HTML */}
         <motion.div
-          ref={refHtml} // Referência para a caixa de HTML
-          className="services-box"
-          variants={boxVariant} // Variantes de animação
-          initial="hidden" // Estado inicial (invisível)
-          animate={inViewHtml ? 'visible' : 'hidden'} // Muda para visível se estiver na vista
-          transition={{ duration: 0.5, delay: 0.1 }} // Transição de animação
+          ref={refHtml}
+          className="skills-box html"
+          variants={boxVariant}
+          initial="hidden"
+          animate={inViewHtml ? 'visible' : 'hidden'}
+          transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <i className="bx bxl-html5"></i> {/* Ícone do HTML */}
-          <h3>HTML</h3> {/* Título da habilidade */}
+          <i className="bx bxl-html5"></i>
+          <h3>HTML</h3>
         </motion.div>
 
         {/* CSS */}
         <motion.div
-          ref={refCss} // Referência para a caixa de CSS
-          className="services-box"
+          ref={refCss}
+          className="skills-box css"
           variants={boxVariant}
           initial="hidden"
           animate={inViewCss ? 'visible' : 'hidden'}
-          transition={{ duration: 0.5, delay: 0.2 }} // Delay para a animação
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <i className="bx bxl-css3"></i> {/* Ícone do CSS */}
-          <h3>CSS</h3> {/* Título da habilidade */}
+          <i className="bx bxl-css3"></i>
+          <h3>CSS</h3>
         </motion.div>
 
         {/* JavaScript */}
         <motion.div
-          ref={refJs} // Referência para a caixa de JavaScript
-          className="services-box"
+          ref={refJs}
+          className="skills-box javascript"
           variants={boxVariant}
           initial="hidden"
           animate={inViewJs ? 'visible' : 'hidden'}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <i className="bx bxl-javascript"></i> {/* Ícone do JavaScript */}
-          <h3>JavaScript</h3> {/* Título da habilidade */}
+          <i className="bx bxl-javascript"></i>
+          <h3>JavaScript</h3>
         </motion.div>
 
         {/* React */}
         <motion.div
-          ref={refReact} // Referência para a caixa de React
-          className="services-box"
+          ref={refReact}
+          className="skills-box react"
           variants={boxVariant}
           initial="hidden"
           animate={inViewReact ? 'visible' : 'hidden'}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <i className="bx bxl-react"></i> {/* Ícone do React */}
-          <h3>React</h3> {/* Título da habilidade */}
+          <i className="bx bxl-react"></i>
+          <h3>React</h3>
         </motion.div>
 
         {/* GitHub */}
         <motion.div
-          ref={refGit} // Referência para a caixa de GitHub
-          className="services-box"
+          ref={refGit}
+          className="skills-box git"
           variants={boxVariant}
           initial="hidden"
           animate={inViewGit ? 'visible' : 'hidden'}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <i className="bx bxl-git"></i> {/* Ícone do GitHub */}
-          <h3>GitHub</h3> {/* Título da habilidade */}
+          <i className="bx bxl-git"></i>
+          <h3>GitHub</h3>
         </motion.div>
 
         {/* SQL */}
         <motion.div
-          ref={refSql} // Referência para a caixa de SQL
-          className="services-box"
+          ref={refSql}
+          className="skills-box sql"
           variants={boxVariant}
           initial="hidden"
           animate={inViewSql ? 'visible' : 'hidden'}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <i className="bx bxl-sql"></i> {/* Ícone do SQL */}
-          <h3>SQL</h3> {/* Título da habilidade */}
+          <i className="bx bxl-sql"></i>
+          <h3>SQL</h3>
+        </motion.div>
+
+        {/* MongoDB */}
+        <motion.div
+          ref={refMongo}
+          className="skills-box mongo"
+          variants={boxVariant}
+          initial="hidden"
+          animate={inViewMongo ? 'visible' : 'hidden'}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        >
+          <i className="bx bxl-mongodb"></i>
+          <h3>MongoDB</h3>
+        </motion.div>
+
+        {/* Java */}
+        <motion.div
+          ref={refJava}
+          className="skills-box java"
+          variants={boxVariant}
+          initial="hidden"
+          animate={inViewJava ? 'visible' : 'hidden'}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          <i className="bx bxl-java"></i>
+          <h3>Java</h3>
         </motion.div>
       </div>
     </section>
   );
 }
 
-export default Skills; // Exporta o componente Skills para uso em outros arquivos
+export default Skills;

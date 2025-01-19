@@ -1,99 +1,124 @@
-/* Estilo da seção de serviços */
-.services {
-  padding: 50px 20px; /* Espaçamento interno superior/inferior e lateral */
-  background-color: #282c34; /* Cor de fundo da seção */
-  text-align: center; /* Centraliza o texto na seção */
+/* Estilos Gerais */
+.skills-section {
+  padding: 60px 20px;
+  background-color: #1e1e1e;
+  text-align: center;
 }
 
-/* Estilo do cabeçalho da seção */
 .heading {
-  font-size: 36px; /* Tamanho da fonte do cabeçalho */
-  margin-bottom: 40px; /* Espaço abaixo do cabeçalho */
-  color: #ffffff; /* Cor do texto do cabeçalho */
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo para o texto em negrito dentro do cabeçalho */
 .heading strong {
-  color: #6ec0d4; /* Cor do texto em negrito */
+  color: #6ec0d4;
 }
 
-/* Estilo do container de serviços */
-.services-container {
-  display: grid; /* Utiliza o layout em grid */
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adapta as colunas conforme o tamanho da tela */
-  gap: 20px; /* Espaço entre os itens da grid */
-  justify-items: center; /* Centraliza os itens da grid */
+/* Container de Habilidades */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 15px;
 }
 
-/* Estilo de cada box de serviço */
-.services-container div {
-  padding: 20px; /* Espaçamento interno para cada box */
-  border-radius: 10px; /* Borda arredondada para os boxes */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor dos boxes */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animações para transformação e sombra */
-  cursor: pointer; /* Muda o cursor ao passar sobre o box */
-  color: white; /* Cor do texto dentro do box */
-  position: relative; /* Permite o posicionamento absoluto do pseudo-elemento */
+.skills-box {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #333333;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo para o destaque dos boxes */
-.services-container div::before {
-  content: ''; /* Necessário para criar um pseudo-elemento */
-  position: absolute; /* Posiciona o destaque em relação ao box */
-  top: -5px; /* Ajusta a posição superior para parecer que flutua */
-  left: -5px; /* Ajusta a posição esquerda para parecer que flutua */
-  right: -5px; /* Ajusta a posição direita para parecer que flutua */
-  bottom: -5px; /* Ajusta a posição inferior para parecer que flutua */
-  border-radius: 15px; /* Borda arredondada para o destaque */
-  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo leve para o destaque */
-  z-index: -1; /* Coloca o destaque atrás do conteúdo do box */
-  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+.skills-box i {
+  font-size: 50px;
+  margin-bottom: 15px;
 }
 
-/* Estilos específicos para cada tecnologia */
-.services-container .html {
-  background-color: #e44d26; /* Cor de fundo para HTML */
+.skills-box h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.services-container .css {
-  background-color: #007acc; /* Cor de fundo para CSS */
+.skills-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.services-container .javascript {
-  background-color: #f7df1e; /* Cor de fundo para JavaScript */
-  color: #000; /* Cor do texto para JavaScript */
+.skills-box::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  transition: background-color 0.3s ease;
 }
 
-.services-container .react {
-  background-color: #61dbfb; /* Cor de fundo para React */
+.skills-box:hover::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.services-container .git {
-  background-color: #f05032; /* Cor de fundo para GitHub */
+/* Cores específicas para cada habilidade */
+.html {
+  background-color: #e44d26;
 }
 
-/* Efeito de hover para os boxes de serviço */
-.services-container div:hover {
-  transform: translateY(-10px); /* Move o box para cima ao passar o mouse */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+.css {
+  background-color: #007acc;
 }
 
-/* Efeito de destaque ao passar o mouse */
-.services-container div:hover::before {
-  background-color: rgba(255, 255, 255, 0.2); /* Aumenta a opacidade do destaque ao passar o mouse */
+.javascript {
+  background-color: #f7df1e;
+  color: #000;
 }
 
-/* Estilos responsivos para telas menores */
+.react {
+  background-color: #61dbfb;
+}
+
+.git {
+  background-color: #f05032;
+}
+
+.sql {
+  background-color: #003b57;
+}
+
+.mongo {
+  background-color: #4caf50;
+}
+
+.java {
+  background-color: #f8981d;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  .services-container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta o layout para telas menores */
-  }
-
   .heading {
-    font-size: 28px; /* Diminui o tamanho da fonte do cabeçalho em telas menores */
+    font-size: 28px;
   }
 
-  .services-container div h3 {
-    font-size: 18px; /* Diminui o tamanho da fonte do título dos boxes em telas menores */
+  .skills-box {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .skills-box i {
+    font-size: 40px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
